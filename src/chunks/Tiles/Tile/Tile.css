@@ -1,0 +1,121 @@
+.tile{
+    visibility: visible;
+    opacity: 1;
+    position: relative;
+    flex: 0 0 23%;
+    max-width: 23%;
+    text-align: center;
+    margin: 1%;
+    background-color: bisque;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 250px;
+    height: 250px;
+    -webkit-transition: visibility .5s linear, opacity .5s linear, transform .3s linear;
+    -moz-transition: visibility .5s linear, opacity .5s linear, transform .3s linear;
+    -ms-transition: visibility .5s linear, opacity .5s linear, transform .3s linear;
+    -o-transition: visibility .5s linear, opacity .5s linear, transform .3s linear;
+    transition: visibility .5s linear, opacity .5s linear, transform .3s linear;
+    -webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+.tile > .mask{
+    display: table;
+    width: 100%;
+    height: 100%;
+    background-color: bisque;
+    border: 2px solid #eee;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 4px;
+    transition: border-color .15s linear;
+}
+.tile > .mask > .mask-text{
+    display: table-cell;
+    vertical-align: middle;
+    font-family: "Comic Sans MS", cursive;
+    color: #542700;
+    font-size: 20px;
+    -webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+.tile.fliped{
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    transform: scaleX(1);
+}
+.tile.fliped > .mask{ display: none; }
+.tile.fliped > .tile-image > .tile-avtor{ display: block; }
+.tile.closed{
+    visibility: hidden;
+    opacity: 0;
+}
+.tile:hover > .mask{ border: 2px solid #ffb200; }
+.tile > .tile-image{
+    display: block;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+.tile > .tile-image > .tile-avtor{
+    display: none;
+    width: 100%;
+    font-family: "Comic Sans MS", cursive;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 10px 0;
+    color: #fff;
+    border-radius: 0 0 4px 4px;
+    background-color: rgba(0,0,0,.4);
+}
+@media (max-width: 768px){
+    .tile{
+        flex: 0 0 46%;
+        max-width: 46%;
+        margin: 2%;
+        width: auto;
+        height: 250px;
+    }
+}
+@media (max-width: 480px){
+    .tile{
+        flex: 0 0 96%;
+        max-width: 96%;
+        margin: 2%;
+        width: auto;
+        height: 350px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,47 @@
+.tiles-container{
+    padding: 30px 60px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    min-height: 310px;
+}
+.tiles-container.empty{ background-color: #fff; }
+.tiles-list{
+    list-style: none;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    padding: 0;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+@media (max-width: 768px){
+    .tiles-container{ padding: 30px; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

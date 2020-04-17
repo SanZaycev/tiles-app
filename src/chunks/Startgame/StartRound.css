@@ -1,0 +1,62 @@
+.nav-container{
+    display: block;
+}
+.nav-list{
+    display: block;
+    list-style: none;
+    padding: 30px;
+    min-height: 65px;
+}
+.step-box{
+    display: block;
+    font-family: "Comic Sans MS", cursive;
+    font-size: 18px;
+    color: #542700;
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+}
+.start-box{
+    display: block;
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 4px;
+    border: 2px solid #92c800;
+    background-color: #fff;
+    -webkit-transition: background-color .15s linear;
+    -moz-transition: background-color .15s linear;
+    -ms-transition: background-color .15s linear;
+    -o-transition: background-color .15s linear;
+    transition: background-color .15s linear;
+    cursor: pointer;
+}
+.start-box > .start-game{
+    display: block;
+    font-family: "Comic Sans MS", cursive;
+    font-size: 18px;
+    color: #542700;
+    text-decoration: none;
+    padding: 10px 20px;
+    -webkit-transition: color .15s linear;
+    -moz-transition: color .15s linear;
+    -ms-transition: color .15s linear;
+    -o-transition: color .15s linear;
+    transition: color .15s linear;
+}
+.start-box:hover{
+    background-color: #92c800;
+}
+.start-box:hover > .start-game{
+    color: #fff;
+}
+.finished-image-box{
+    padding: 15px;
+    overflow: hidden;
+}
+.finished-image-box > img{
+    display: block;
+    object-fit: contain;
+    margin: 0 auto;
+    width: 60%;
+}
